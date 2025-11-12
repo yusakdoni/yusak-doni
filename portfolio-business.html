@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analysis - Yusak Doni Yudanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-detail {
+            padding: 8rem 0 4rem;
+        }
+        
+        .portfolio-hero {
+            background: var(--dark-gray);
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+        }
+        
+        .portfolio-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .meta-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray);
+            border-radius: 15px;
+        }
+        
+        .meta-item h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .case-studies {
+            display: grid;
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        
+        .case-study {
+            background: var(--dark-gray);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-detail">
+        <div class="container">
+            <a href="index.html#portfolio" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            
+            <div class="portfolio-hero">
+                <div class="section-header">
+                    <h1 class="section-title script-title">Business Analysis</h1>
+                    <p class="section-subtitle">Strategic Insights & Process Optimization</p>
+                </div>
+                
+                <div class="portfolio-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Owner & Lead Business Analyst</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duration</h4>
+                        <p>2020 - Present</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Company</h4>
+                        <p>Saka & Co</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Projects</h4>
+                        <p>25+ Completed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Consulting Approach</h2>
+                    <p>
+                        At Saka & Co, I lead business analysis projects that transform organizational processes 
+                        and drive strategic decision-making. My approach combines analytical rigor with practical 
+                        business insights to deliver measurable results.
+                    </p>
+                    
+                    <h3>Core Methodologies</h3>
+                    <ul>
+                        <li>Data Analysis and Quantitative Insights</li>
+                        <li>Process Mapping and Workflow Optimization</li>
+                        <li>Stakeholder Engagement and Requirement Gathering</li>
+                        <li>Solution Design and Practical Implementation</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Tools & Technologies</h4>
+                        <div class="skill-list">
+                            <span class="skill-tag">SQL & Databases</span>
+                            <span class="skill-tag">Process Modeling</span>
+                            <span class="skill-tag">Requirements Gathering</span>
+                            <span class="skill-tag">Stakeholder Management</span>
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Project Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-studies">
+                <div class="case-study">
+                    <h3>E-commerce Platform Optimization</h3>
+                    <p><strong>Client:</strong> Retail Company | <strong>Duration:</strong> 6 months</p>
+                    <ul>
+                        <li>Analyzed customer journey and identified bottlenecks</li>
+                        <li>Reduced cart abandonment by 25%</li>
+                        <li>Improved conversion rate by 18%</li>
+                        <li>Streamlined checkout process</li>
+                    </ul>
+                </div>
+                
+                <div class="case-study">
+                    <h3>Manufacturing Process Improvement</h3>
+                    <p><strong>Client:</strong> Industrial Manufacturer | <strong>Duration:</strong> 8 months</p>
+                    <ul>
+                        <li>Mapped end-to-end production processes</li>
+                        <li>Identified efficiency improvements saving 15% in operational costs</li>
+                        <li>Implemented quality control measures</li>
+                        <li>Reduced production delays by 30%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </div>
+                <p class="footer-text">
+                    &copy; 2023 Yusak Doni Yudanto. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

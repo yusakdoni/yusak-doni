@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation Operations - Yusak Doni Yudanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-detail {
+            padding: 8rem 0 4rem;
+        }
+        
+        .portfolio-hero {
+            background: var(--dark-gray);
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+        }
+        
+        .portfolio-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .meta-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray);
+            border-radius: 15px;
+        }
+        
+        .meta-item h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .achievement-card {
+            background: var(--dark-gray);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-detail">
+        <div class="container">
+            <a href="index.html#portfolio" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            
+            <div class="portfolio-hero">
+                <div class="section-header">
+                    <h1 class="section-title script-title">Aviation Operations</h1>
+                    <p class="section-subtitle">Station Management & Safety Excellence</p>
+                </div>
+                
+                <div class="portfolio-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Station Representative</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duration</h4>
+                        <p>2016 - Present</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Company</h4>
+                        <p>PT AIRFAST Indonesia</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Location</h4>
+                        <p>Multiple Airports</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Project Overview</h2>
+                    <p>
+                        As Station Representative at PT AIRFAST Indonesia, I oversee comprehensive aviation operations 
+                        ensuring safety, efficiency, and regulatory compliance across multiple airport stations. My role 
+                        encompasses ground handling coordination, safety management, and stakeholder liaison.
+                    </p>
+                    
+                    <h3>Key Responsibilities</h3>
+                    <ul>
+                        <li>Manage daily station operations and implement safety procedures</li>
+                        <li>Coordinate ground handling teams for optimal performance</li>
+                        <li>Monitor third-party providers for quality assurance</li>
+                        <li>Ensure regulatory compliance with aviation authorities</li>
+                        <li>Manage staff performance and resource allocation</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Core Competencies</h4>
+                        <div class="skill-list">
+                            <span class="skill-tag">Safety Management</span>
+                            <span class="skill-tag">Ground Operations</span>
+                            <span class="skill-tag">Regulatory Compliance</span>
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Crisis Management</span>
+                            <span class="skill-tag">Stakeholder Relations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3><i class="fas fa-trophy"></i> Key Achievements</h3>
+                    <ul>
+                        <li>Maintained 99.8% safety compliance rate</li>
+                        <li>Improved on-time performance by 15%</li>
+                        <li>Reduced operational costs by 12%</li>
+                        <li>Zero major safety incidents in 5+ years</li>
+                    </ul>
+                </div>
+                
+                <div class="achievement-card">
+                    <h3><i class="fas fa-chart-line"></i> Performance Metrics</h3>
+                    <ul>
+                        <li>100+ flights managed monthly</li>
+                        <li>50+ team members supervised</li>
+                        <li>15+ stakeholder partnerships</li>
+                        <li>24/7 operational readiness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </div>
+                <p class="footer-text">
+                    &copy; 2023 Yusak Doni Yudanto. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

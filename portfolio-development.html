@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development - Yusak Doni Yudanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-detail {
+            padding: 8rem 0 4rem;
+        }
+        
+        .portfolio-hero {
+            background: var(--dark-gray);
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+        }
+        
+        .portfolio-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .meta-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray);
+            border-radius: 15px;
+        }
+        
+        .meta-item h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        
+        .project-card {
+            background: var(--dark-gray);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: var(--gray);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        
+        .tech-tag:hover {
+            background: var(--accent);
+            color: var(--black);
+            transform: translateY(-2px);
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+        
+        .skills-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .skill-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray);
+            border-radius: 15px;
+            transition: var(--transition);
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-5px);
+            border: 1px solid var(--accent);
+        }
+        
+        .skill-item i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-detail">
+        <div class="container">
+            <a href="index.html#portfolio" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            
+            <div class="portfolio-hero">
+                <div class="section-header">
+                    <h1 class="section-title script-title">Web Development</h1>
+                    <p class="section-subtitle">Fullstack Solutions & Modern Applications</p>
+                </div>
+                
+                <div class="portfolio-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Fullstack Developer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Experience</h4>
+                        <p>4+ Years</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Projects</h4>
+                        <p>15+ Delivered</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Specialization</h4>
+                        <p>Fullstack Development</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Development Philosophy</h2>
+                    <p>
+                        I create robust, scalable web applications that combine elegant frontend design 
+                        with powerful backend functionality. My development approach focuses on clean code, 
+                        user experience, and maintainable architecture while following industry best practices.
+                    </p>
+                    
+                    <h3>Technical Expertise</h3>
+                    <div class="skills-showcase">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <h4>Frontend</h4>
+                            <p>HTML5, CSS3, JavaScript, React, Vue</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <h4>Backend</h4>
+                            <p>Node.js, Express, Python, APIs</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <h4>Database</h4>
+                            <p>MongoDB, PostgreSQL, MySQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Responsive</h4>
+                            <p>Mobile-first Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Development Approach</h4>
+                        <div class="skill-list">
+                            <span class="skill-tag">Agile Methodology</span>
+                            <span class="skill-tag">Test-Driven Development</span>
+                            <span class="skill-tag">API Design</span>
+                            <span class="skill-tag">Database Design</span>
+                            <span class="skill-tag">Performance Optimization</span>
+                            <span class="skill-tag">Security Best Practices</span>
+                            <span class="skill-tag">Version Control (Git)</span>
+                            <span class="skill-tag">CI/CD Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <h2 style="text-align: center; margin-bottom: 3rem; color: var(--accent);">Featured Projects</h2>
+                
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Stripe API</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <p>Full-featured online store with inventory management, user authentication, and payment processing.</p>
+                    <ul>
+                        <li>Implemented secure payment gateway integration with Stripe</li>
+                        <li>Developed comprehensive admin dashboard for inventory management</li>
+                        <li>Optimized for mobile responsiveness across all devices</li>
+                        <li>Reduced page load time by 40% through code optimization</li>
+                        <li>Integrated real-time inventory tracking and order management</li>
+                        <li>Implemented user authentication and role-based access control</li>
+                    </ul>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project Management Tool</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Chart.js</span>
+                    </div>
+                    <p>Collaborative project management application with real-time updates and team collaboration features.</p>
+                    <ul>
+                        <li>Real-time task updates and notifications using WebSockets</li>
+                        <li>Team collaboration features with file sharing and comments</li>
+                        <li>Advanced reporting and analytics with interactive charts</li>
+                        <li>Role-based access control and permission management</li>
+                        <li>Gantt chart visualization for project timelines</li>
+                        <li>Integration with third-party calendar and email services</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>Healthcare Management System</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <p>Comprehensive healthcare management platform for patient records and appointment scheduling.</p>
+                    <ul>
+                        <li>Developed secure patient record management system with HIPAA compliance</li>
+                        <li>Implemented appointment scheduling with automated reminders</li>
+                        <li>Created prescription management and drug interaction checking</li>
+                        <li>Built analytics dashboard for healthcare metrics and reporting</li>
+                        <li>Integrated telemedicine features for remote consultations</li>
+                        <li>Ensured data security and privacy with encryption and access controls</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="achievements-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 4rem 0;">
+                <div class="achievement-card" style="background: var(--dark-gray); padding: 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="color: var(--accent); margin-bottom: 1rem;"><i class="fas fa-code"></i> Development Principles</h3>
+                    <ul>
+                        <li>Clean, maintainable code following best practices</li>
+                        <li>Mobile-first responsive design approach</li>
+                        <li>Performance optimization and fast loading times</li>
+                        <li>Security-first development mindset</li>
+                        <li>User-centered design and experience</li>
+                    </ul>
+                </div>
+                
+                <div class="achievement-card" style="background: var(--dark-gray); padding: 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="color: var(--accent); margin-bottom: 1rem;"><i class="fas fa-rocket"></i> Project Success</h3>
+                    <ul>
+                        <li>15+ successful web applications delivered</li>
+                        <li<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development - Yusak Doni Yudanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-detail {
+            padding: 8rem 0 4rem;
+        }
+        
+        .portfolio-hero {
+            background: var(--dark-gray);
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+        }
+        
+        .portfolio-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .meta-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray);
+            border-radius: 15px;
+        }
+        
+        .meta-item h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        
+        .project-card {
+            background: var(--dark-gray);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: var(--gray);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-detail">
+        <div class="container">
+            <a href="index.html#portfolio" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            
+            <div class="portfolio-hero">
+                <div class="section-header">
+                    <h1 class="section-title script-title">Web Development</h1>
+                    <p class="section-subtitle">Fullstack Solutions & Modern Applications</p>
+                </div>
+                
+                <div class="portfolio-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Fullstack Developer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Experience</h4>
+                        <p>4+ Years</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Projects</h4>
+                        <p>15+ Delivered</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Specialization</h4>
+                        <p>Fullstack Development</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Development Philosophy</h2>
+                    <p>
+                        I create robust, scalable web applications that combine elegant frontend design 
+                        with powerful backend functionality. My development approach focuses on clean code, 
+                        user experience, and maintainable architecture.
+                    </p>
+                    
+                    <h3>Technical Stack</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML5/CSS3/JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Development Approach</h4>
+                        <div class="skill-list">
+                            <span class="skill-tag">Agile Methodology</span>
+                            <span class="skill-tag">Test-Driven Development</span>
+                            <span class="skill-tag">API Design</span>
+                            <span class="skill-tag">Database Design</span>
+                            <span class="skill-tag">Performance Optimization</span>
+                            <span class="skill-tag">Security Best Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe API</span>
+                    </div>
+                    <p>Full-featured online store with inventory management, user authentication, and payment processing.</p>
+                    <ul>
+                        <li>Implemented secure payment gateway integration</li>
+                        <li>Developed admin dashboard for inventory management</li>
+                        <li>Optimized for mobile responsiveness</li>
+                        <li>Reduced page load time by 40%</li>
+                    </ul>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project Management Tool</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Socket.io</span>
+                    </div>
+                    <p>Collaborative project management application with real-time updates and team collaboration features.</p>
+                    <ul>
+                        <li>Real-time task updates using WebSockets</li>
+                        <li>Team collaboration and file sharing</li>
+                        <li>Advanced reporting and analytics</li>
+                        <li>Role-based access control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </div>
+                <p class="footer-text">
+                    &copy; 2023 Yusak Doni Yudanto. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>>100% client satisfaction on development projects</li>
+                        <li>Average 30% performance improvement</li>
+                        <li>All projects delivered on time and within budget</li>
+                        <li>Comprehensive documentation and support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </div>
+                <p class="footer-text">
+                    &copy; 2023 Yusak Doni Yudanto. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

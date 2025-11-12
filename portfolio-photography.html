@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography - Yusak Doni Yudanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-detail {
+            padding: 8rem 0 4rem;
+        }
+        
+        .portfolio-hero {
+            background: var(--dark-gray);
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+        }
+        
+        .portfolio-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .meta-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray);
+            border-radius: 15px;
+        }
+        
+        .meta-item h4 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            background: var(--gray);
+            position: relative;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .service-card {
+            background: var(--dark-gray);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-detail">
+        <div class="container">
+            <a href="index.html#portfolio" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            
+            <div class="portfolio-hero">
+                <div class="section-header">
+                    <h1 class="section-title script-title">Photography</h1>
+                    <p class="section-subtitle">Capturing Moments, Creating Memories</p>
+                </div>
+                
+                <div class="portfolio-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Owner & Photographer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Experience</h4>
+                        <p>5+ Years</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Business</h4>
+                        <p>Saka Photowork</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Specialization</h4>
+                        <p>Portrait & Commercial</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Photographic Vision</h2>
+                    <p>
+                        Through Saka Photowork, I create compelling visual narratives that capture authentic moments 
+                        and emotions. My photography style combines technical excellence with artistic vision to 
+                        deliver images that tell meaningful stories.
+                    </p>
+                    
+                    <h3>Photography Services</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <i class="fas fa-user fa-2x"></i>
+                            <h4>Portrait Photography</h4>
+                            <p>Individual & family portraits</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-ring fa-2x"></i>
+                            <h4>Event Photography</h4>
+                            <p>Weddings & celebrations</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-briefcase fa-2x"></i>
+                            <h4>Commercial Photography</h4>
+                            <p>Product & corporate</p>
+                        </div>
+                        <div class="service-card">
+                            <i class="fas fa-landmark fa-2x"></i>
+                            <h4>Architectural Photography</h4>
+                            <p>Properties & spaces</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Technical Expertise</h4>
+                        <div class="skill-list">
+                            <span class="skill-tag">Portrait Photography</span>
+                            <span class="skill-tag">Lighting Techniques</span>
+                            <span class="skill-tag">Photo Editing</span>
+                            <span class="skill-tag">Color Grading</span>
+                            <span class="skill-tag">Composition</span>
+                            <span class="skill-tag">Client Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; margin: 4rem 0 2rem;">Portfolio Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background: linear-gradient(45deg, var(--dark-gray), var(--gray));"></div>
+                <div class="gallery-item" style="background: linear-gradient(45deg, var(--gray), var(--medium-gray));"></div>
+                <div class="gallery-item" style="background: linear-gradient(45deg, var(--medium-gray), var(--light-gray));"></div>
+                <div class="gallery-item" style="background: linear-gradient(45deg, var(--light-gray), var(--accent));"></div>
+                <div class="gallery-item" style="background: linear-gradient(45deg, var(--dark-gray), var(--medium-gray));"></div>
+                <div class="gallery-item" style="background: linear-gradient(45deg, var(--gray), var(--light-gray));"></div>
+            </div>
+
+            <div class="achievements-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 4rem 0;">
+                <div class="achievement-card" style="background: var(--dark-gray); padding: 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                    <h3><i class="fas fa-camera"></i> Equipment & Tools</h3>
+                    <ul>
+                        <li>Professional DSLR & Mirrorless Cameras</li>
+                        <li>Studio Lighting Equipment</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Lightroom & Photoshop</li>
+                    </ul>
+                </div>
+                
+                <div class="achievement-card" style="background: var(--dark-gray); padding: 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                    <h3><i class="fas fa-award"></i> Client Success</h3>
+                    <ul>
+                        <li>100+ satisfied clients</li>
+                        <li>50+ wedding events covered</li>
+                        <li>25+ commercial projects</li>
+                        <li>98% client retention rate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Yusak Doni Yudanto</span>
+                </div>
+                <p class="footer-text">
+                    &copy; 2023 Yusak Doni Yudanto. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
